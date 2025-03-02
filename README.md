@@ -20,7 +20,7 @@ For example, to run with 10 worker processes, 5 simultaneous processes, a time l
 
 ``` bash
 ./oss -n 10 -s 5 -t 20 -i 50
-
+```
 ## Problems Encountered
 
 Several issues were found, and below was their solutions:
@@ -33,7 +33,7 @@ Several issues were found, and below was their solutions:
 	-**Problem**: Warnings were generated for variables that were declared but not used ('increment' and 'intervalInMsToLaunchChildren').
 	--**Solution**: These warnings can be ignored.
 
-3. **Redefintion of Variables**+
+3. **Redefintion of Variables**:
 	-**Problem**: Errors occured due to the redefinition of variables (e.g., 'increment).
 	-**Solution**: Ensure that each variable is defined only once within the same scope.
 
